@@ -12,7 +12,7 @@ from gi.repository import Notify
 
 def getnotif(title, message):
 	Notify.init("Test")
-	notif=Notify.Notification.new(title,message)
+	notif=Notify.Notification.new(title,message, "Description:")
 	notif.show()
 	return
 
